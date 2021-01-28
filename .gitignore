@@ -10,3 +10,5 @@ CMakeCache.txt
 Makefile
 .vs/
 lib*.a
+build/
+.DS_Store
