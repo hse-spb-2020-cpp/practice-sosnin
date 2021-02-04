@@ -20,4 +20,7 @@ else()
     endif (UNIX AND NOT CMAKE_CXX_FLAGS)
 endif (MSVC)
 
-add_executable(app_0101 200128/01.cpp)
+add_executable(app_0101 210128/01.cpp)
+
+add_executable(app_0201 210204/01.cpp)
+add_executable(app_0202 210204/02.cpp)
