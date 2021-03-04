@@ -28,3 +28,8 @@ add_executable(app_0202 210204/02.cpp)
 add_executable(app_0301 210211/01.cpp)
 
 add_executable(app_0401 210218/01.cpp)
+
+add_executable(app_0501 210225/01.cpp)
+
+add_executable(app_0601 210304/01.cpp)
+
