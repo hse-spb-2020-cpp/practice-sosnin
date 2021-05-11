@@ -34,9 +34,14 @@ public:
         remaining_changed_.wait(lock, [&r = remaining_] { return r <= 0; });
     }
 
+    int remaining() const {
+        std::unique_lock<std::mutex> lock(remaining_mutex_);
+        return remaining_;
+    }
+
 private:
     int remaining_;
-    std::mutex remaining_mutex_;
+    mutable std::mutex remaining_mutex_;
     std::condition_variable remaining_changed_;
 };
 
